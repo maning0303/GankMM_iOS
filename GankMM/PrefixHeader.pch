@@ -53,6 +53,8 @@
 #define MNGitHub @"https://github.com/maning0303"
 //Android地址
 #define MNGitHubAndroidGankMM @"https://github.com/maning0303/GankMM"
+//iOS地址
+#define MNGitHubIOSGankMM @"https://github.com/maning0303/GankMM_iOS"
 //干货集中营
 #define MNGankio @"https://gank.io"
 
