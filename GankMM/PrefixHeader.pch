@@ -1,0 +1,60 @@
+//
+//  PrefixHeader.pch
+//  GankMM
+//
+//  Created by 马宁 on 16/5/9.
+//  Copyright © 2016年 马宁. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIBarButtonItem+MNExtension.h"
+#import "UIView+MNExtension.h"
+//#import "UINavigationController+FDFullscreenPopGesture.h"
+#import <MBProgressHUD.h>
+#import "GankNetApi.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "MyProgressHUD.h"
+#import "MNTopWindowController.h"
+#import "MNTopWindow.h"
+#import "FileUtils.h"
+#import "MNUtils.h"
+
+
+//自定义Log
+#ifdef DEBUG
+#define MNLog(...) NSLog(__VA_ARGS__)
+#else
+#define MNLog(...)
+#endif
+
+//打印函数
+#define MNLogFunc MNLog(@"%s",__func__)
+
+//设置颜色
+#define MNRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//颜色
+#define LineColor UIColorFromRGB(0xFFDFDFDF)       //线的颜色
+#define GankMainColor UIColorFromRGB(0xFF00bb9c)       //主题色
+#define GankTabBarGrayColor UIColorFromRGB(0xFFa9b7b7)       //主题色
+
+//屏幕的宽度
+#define MNScreenW [UIScreen mainScreen].bounds.size.width
+#define MNScreenH [UIScreen mainScreen].bounds.size.height
+#define MNScreenBounds [UIScreen mainScreen].bounds
+
+//Window
+#define MNKeyWindow [UIApplication sharedApplication].keyWindow
+
+//Github地址
+#define MNGitHub @"https://github.com/maning0303"
+//Android地址
+#define MNGitHubAndroidGankMM @"https://github.com/maning0303/GankMM"
+//干货集中营
+#define MNGankio @"https://gank.io"
+
+
+#endif /* PrefixHeader_pch */
