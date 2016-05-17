@@ -218,7 +218,7 @@ const CGFloat TopViewH = 300;
                 break;
             case 1:
                 //跳转到项目主页
-                [self pushToWebView:MNGitHub];
+                [self pushToWebView:MNGitHubIOSGankMM];
                 break;
             case 2:
                 //推荐Android
