@@ -93,6 +93,8 @@
 		E0B631D31CE178AF003D9A02 /* GankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B631D21CE178AF003D9A02 /* GankModel.m */; };
 		E0B631D91CE17F74003D9A02 /* MNGirlsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B631D71CE17F74003D9A02 /* MNGirlsCell.m */; };
 		E0B631DA1CE17F74003D9A02 /* MNGirlsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B631D81CE17F74003D9A02 /* MNGirlsCell.xib */; };
+		E0DDE35B1CEAB8B7008F1535 /* gank_screen001.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */; };
+		E0DDE35C1CEAB8B7008F1535 /* gank_screen_002.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +259,8 @@
 		E0B631D61CE17F74003D9A02 /* MNGirlsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNGirlsCell.h; sourceTree = "<group>"; };
 		E0B631D71CE17F74003D9A02 /* MNGirlsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNGirlsCell.m; sourceTree = "<group>"; };
 		E0B631D81CE17F74003D9A02 /* MNGirlsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNGirlsCell.xib; sourceTree = "<group>"; };
+		E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gank_screen001.png; sourceTree = "<group>"; };
+		E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gank_screen_002.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -753,6 +757,8 @@
 		E074E9451CEAB07A00FB01FE /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */,
+				E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */,
 			);
 			name = screenshots;
 			sourceTree = "<group>";
@@ -1002,6 +1008,8 @@
 				E00F332A1CE1D59200CC1BD4 /* MNGankBaseCell.xib in Resources */,
 				E074C3331CE2DE23002206DB /* MNAboutViewController.xib in Resources */,
 				E074C3281CE2CE6B002206DB /* Assets.xcassets in Resources */,
+				E0DDE35C1CEAB8B7008F1535 /* gank_screen_002.png in Resources */,
+				E0DDE35B1CEAB8B7008F1535 /* gank_screen001.png in Resources */,
 				E0B631C01CE0E059003D9A02 /* GankViewController.xib in Resources */,
 				E00F33171CE1BBA700CC1BD4 /* CoreSVP.bundle in Resources */,
 				E00F31481CE1BA6400CC1BD4 /* PB.bundle in Resources */,
