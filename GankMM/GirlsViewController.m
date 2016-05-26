@@ -291,9 +291,6 @@ static NSString * MNGirlsCellID = @"girls";
  *  展示网络图片
  */
 -(void)networkImageShow:(NSInteger)index{
-    //获取当前cell
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    MNGirlsCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     
     //图片集合
     NSMutableArray *networkImages = [NSMutableArray array];
@@ -302,18 +299,15 @@ static NSString * MNGirlsCellID = @"girls";
         [networkImages addObject:gankModel.url];
     }
     
-    [PhotoBroswerVC show:self type:PhotoBroswerVCTypeModal index:index photoModelBlock:^NSArray *{
+    //避免循环引用
+    __weak typeof(self) weakSelf=self;
+    [PhotoBroswerVC show:weakSelf type:PhotoBroswerVCTypeModal index:index photoModelBlock:^NSArray *{
         
         NSMutableArray *modelsM = [NSMutableArray arrayWithCapacity:networkImages.count];
         for (NSUInteger i = 0; i< networkImages.count; i++) {
             PhotoModel *pbModel=[[PhotoModel alloc] init];
             pbModel.mid = i + 1;
-//            pbModel.title = [NSString stringWithFormat:@"这是标题%@",@(i+1)];
-//            pbModel.desc = [NSString stringWithFormat:@"描述文字%@",@(i+1)];
             pbModel.image_HD_U = networkImages[i];
-            //源frame
-            UIImageView *imageV = cell.imageViewShow;
-            pbModel.sourceImageView = imageV;
             
             [modelsM addObject:pbModel];
         }

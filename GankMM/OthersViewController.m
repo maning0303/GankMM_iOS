@@ -38,10 +38,14 @@ const CGFloat TopViewH = 300;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.tableView.backgroundColor = [UIColor clearColor];
     
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     //距离顶部的调整
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -49,7 +53,6 @@ const CGFloat TopViewH = 300;
     NSLog(@"---OthersViewController---viewDidAppear---%@",animated?@"true":@"false");
     //状态栏设置
     [[MNTopWindowController shareInstance] setStatusBarStyle:UIStatusBarStyleLightContent];
-    [self.navigationController setNavigationBarHidden:YES];
     
     [self.tableView reloadData];
 }
