@@ -66,7 +66,7 @@
 - (IBAction)btn_github:(id)sender {
     //打开WebView，展示我的gitHub主页
     if (YES) {
-        [self goWebView:MNGitHub];
+        [self goWebView:MNGitHub WithTitle:@"GitHub主页"];
     }else{  //通过浏览器打开
 
     }
@@ -75,17 +75,18 @@
 - (IBAction)btn_gank:(id)sender {
     //跳转到干货集中营首页
     if (YES) {
-        [self goWebView:MNGankio];
+        [self goWebView:MNGankio WithTitle:@"干货集中营"];
     }else{  //通过浏览器打开
 
     }
 }
 
--(void)goWebView:(NSString *)url
+-(void)goWebView:(NSString *)url WithTitle:(NSString *)title
 {
     //跳转WebView
     MNWebViewController *webViewVc = [[MNWebViewController alloc] init];
     webViewVc.url = url;
+    webViewVc.mTitle = title;
     [self.navigationController pushViewController:webViewVc animated:YES];
 }
 

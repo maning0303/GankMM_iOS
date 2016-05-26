@@ -221,11 +221,11 @@ const CGFloat TopViewH = 300;
                 break;
             case 1:
                 //跳转到项目主页
-                [self pushToWebView:MNGitHubIOSGankMM];
+                [self pushToWebView:MNGitHubIOSGankMM WithTitle:@"项目GitHub主页"];
                 break;
             case 2:
                 //推荐Android
-                [self pushToWebView:MNGitHubAndroidGankMM];
+                [self pushToWebView:MNGitHubAndroidGankMM WithTitle:@"Android干货客户端"];
                 break;
         }
     }else if(indexPath.section == 1){
@@ -287,13 +287,15 @@ const CGFloat TopViewH = 300;
     [self.navigationController pushViewController:collectVc animated:YES];
 }
 
--(void)pushToWebView:(NSString *)url
+-(void)pushToWebView:(NSString *)url WithTitle:(NSString *)title
 {
     //跳转WebView
     MNWebViewController *webViewVc = [[MNWebViewController alloc] init];
     webViewVc.url = url;
+    webViewVc.mTitle = title;
     [self.navigationController pushViewController:webViewVc animated:YES];
 }
+
 
 -(void)pushToAboutPage
 {

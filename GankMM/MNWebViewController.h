@@ -15,4 +15,7 @@
 
 @property(nonatomic,strong)NSString *url;
 
+//显示标题：没有gankModel的时候用
+@property(nonatomic,strong)NSString *mTitle;
+
 @end

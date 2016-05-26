@@ -70,6 +70,13 @@
     self.navigationController.navigationBar.hidden=NO;
     
     self.navigationItem.title = @"网页";
+    if(_gankModel==nil){
+        if(_mTitle!=nil && _mTitle.length > 0){
+            self.navigationItem.title = _mTitle;
+        }
+    }else{
+        self.navigationItem.title = _gankModel.desc;
+    }
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"gank_more_vert" highImage:@"gank_more_vert" target:self action:@selector(rightClick)];
     
