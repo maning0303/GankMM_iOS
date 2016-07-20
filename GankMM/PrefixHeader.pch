@@ -11,8 +11,7 @@
 
 #import "UIBarButtonItem+MNExtension.h"
 #import "UIView+MNExtension.h"
-//#import "UINavigationController+FDFullscreenPopGesture.h"
-#import <MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import "GankNetApi.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UINavigationController+FDFullscreenPopGesture.h"

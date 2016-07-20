@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0B29C5963B814D4A204ADDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6D2BB68AF3F356B2BCD594 /* libPods.a */; };
+		2B32EC86D74EFBD658306B67 /* libPods-GankMM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC15BA267BCC210D7FFBFDDA /* libPods-GankMM.a */; };
 		E00A65CC1CE49854004B6E4F /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = E00A65CB1CE49854004B6E4F /* UINavigationController+FDFullscreenPopGesture.m */; };
 		E00A66251CE5E0C7004B6E4F /* UIScrollView+PullBig.m in Sources */ = {isa = PBXBuildFile; fileRef = E00A66241CE5E0C7004B6E4F /* UIScrollView+PullBig.m */; };
 		E00F31441CE1BA6400CC1BD4 /* UIView+PBExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = E00F31251CE1BA6400CC1BD4 /* UIView+PBExtend.m */; };
@@ -98,9 +98,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F85E7322854F74AF94D5F0B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		AB6D2BB68AF3F356B2BCD594 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4F27ADF74A0D1F5BA505B02 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		33E5528302FBB88054F373C2 /* Pods-GankMM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankMM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GankMM/Pods-GankMM.debug.xcconfig"; sourceTree = "<group>"; };
+		4CE6030A5FD60EBAA2720F25 /* Pods-GankMM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GankMM.release.xcconfig"; path = "Pods/Target Support Files/Pods-GankMM/Pods-GankMM.release.xcconfig"; sourceTree = "<group>"; };
 		E00A65CA1CE49854004B6E4F /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		E00A65CB1CE49854004B6E4F /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		E00A66231CE5E0C7004B6E4F /* UIScrollView+PullBig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PullBig.h"; sourceTree = "<group>"; };
@@ -261,6 +260,7 @@
 		E0B631D81CE17F74003D9A02 /* MNGirlsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNGirlsCell.xib; sourceTree = "<group>"; };
 		E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gank_screen001.png; sourceTree = "<group>"; };
 		E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gank_screen_002.png; sourceTree = "<group>"; };
+		EC15BA267BCC210D7FFBFDDA /* libPods-GankMM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GankMM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,18 +269,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E030CBED1CE38A300029A42D /* libsqlite3.tbd in Frameworks */,
-				B0B29C5963B814D4A204ADDB /* libPods.a in Frameworks */,
+				2B32EC86D74EFBD658306B67 /* libPods-GankMM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		106FFF0BE9396B0740A1CAAE /* Pods */ = {
+		150D882E006F36E5CBD4A587 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6F85E7322854F74AF94D5F0B /* Pods.debug.xcconfig */,
-				C4F27ADF74A0D1F5BA505B02 /* Pods.release.xcconfig */,
+				33E5528302FBB88054F373C2 /* Pods-GankMM.debug.xcconfig */,
+				4CE6030A5FD60EBAA2720F25 /* Pods-GankMM.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				E030CBEC1CE38A300029A42D /* libsqlite3.tbd */,
-				AB6D2BB68AF3F356B2BCD594 /* libPods.a */,
+				EC15BA267BCC210D7FFBFDDA /* libPods-GankMM.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -769,8 +769,8 @@
 				E074E9451CEAB07A00FB01FE /* screenshots */,
 				E0B631671CE0D1B5003D9A02 /* GankMM */,
 				E0B631661CE0D1B5003D9A02 /* Products */,
-				106FFF0BE9396B0740A1CAAE /* Pods */,
 				84B18141E23A2B960CA98375 /* Frameworks */,
+				150D882E006F36E5CBD4A587 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -948,12 +948,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0B6317C1CE0D1B5003D9A02 /* Build configuration list for PBXNativeTarget "GankMM" */;
 			buildPhases = (
-				3BFD8315E374D303439C64F2 /* Check Pods Manifest.lock */,
+				0BA1E978C2443DEFD88767BF /* [CP] Check Pods Manifest.lock */,
 				E0B631611CE0D1B5003D9A02 /* Sources */,
 				E0B631621CE0D1B5003D9A02 /* Frameworks */,
 				E0B631631CE0D1B5003D9A02 /* Resources */,
-				9B9122A3C86BF4224A524307 /* Embed Pods Frameworks */,
-				1E5E82143428A27F1CF76F22 /* Copy Pods Resources */,
+				26A140A57AEDB990326B4E51 /* [CP] Embed Pods Frameworks */,
+				B4ACBFB3D4498B5FCD70786C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1027,49 +1027,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E5E82143428A27F1CF76F22 /* Copy Pods Resources */ = {
+		0BA1E978C2443DEFD88767BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3BFD8315E374D303439C64F2 /* Check Pods Manifest.lock */ = {
+		26A140A57AEDB990326B4E51 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GankMM/Pods-GankMM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B9122A3C86BF4224A524307 /* Embed Pods Frameworks */ = {
+		B4ACBFB3D4498B5FCD70786C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GankMM/Pods-GankMM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1235,7 +1235,7 @@
 		};
 		E0B6317D1CE0D1B5003D9A02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F85E7322854F74AF94D5F0B /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 33E5528302FBB88054F373C2 /* Pods-GankMM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1251,7 +1251,7 @@
 		};
 		E0B6317E1CE0D1B5003D9A02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4F27ADF74A0D1F5BA505B02 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4CE6030A5FD60EBAA2720F25 /* Pods-GankMM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
