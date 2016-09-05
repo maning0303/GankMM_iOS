@@ -17,23 +17,24 @@ static MBProgressHUD *hud;
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:MNKeyWindow animated:YES];
     // Set the annular determinate mode to show task progress.
     hud.mode = MBProgressHUDModeText;
-    hud.labelText = message;
+    hud.label.text = message;
     // Move to bottm center.
-    hud.yOffset = MNScreenH/2 - 120;
-    [hud hide:YES afterDelay:1.f];
+    [hud setOffset:CGPointMake(0, MNScreenH/2 - 120)];
+//    hud.yOffset = MNScreenH/2 - 120;
+    [hud hideAnimated:YES afterDelay:1.f];
 }
 
 +(MBProgressHUD *)showProgressHUDWithInfo:(NSString *)info
 {
     hud = [MBProgressHUD showHUDAddedTo:MNKeyWindow animated:YES];
-    hud.labelText = NSLocalizedString(info, @"");
+    hud.label.text = NSLocalizedString(info, @"");
     return hud;
 }
 
 +(void)dissmissProgressHUD
 {
     if(hud != nil){
-        [hud hide:YES];
+        [hud hideAnimated:YES];
     }
 }
 
