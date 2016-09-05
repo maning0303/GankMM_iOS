@@ -72,6 +72,11 @@
 		E030CC041CE44E3B0029A42D /* MNGankCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E030CC021CE44E3B0029A42D /* MNGankCollectCell.m */; };
 		E030CC051CE44E3B0029A42D /* MNGankCollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E030CC031CE44E3B0029A42D /* MNGankCollectCell.xib */; };
 		E030CC091CE45A710029A42D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E030CC081CE45A710029A42D /* Reachability.m */; };
+		E0366C7D1D7D5D8600C35C27 /* JGWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E0366C7C1D7D5D8600C35C27 /* JGWaterflowLayout.m */; };
+		E0366C811D7D5DE300C35C27 /* MNPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0366C7F1D7D5DE300C35C27 /* MNPicturesViewController.m */; };
+		E0366C821D7D5DE300C35C27 /* MNPicturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0366C801D7D5DE300C35C27 /* MNPicturesViewController.xib */; };
+		E0366C861D7DB5E600C35C27 /* MNPicturesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0366C841D7DB5E600C35C27 /* MNPicturesCell.m */; };
+		E0366C871D7DB5E600C35C27 /* MNPicturesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0366C851D7DB5E600C35C27 /* MNPicturesCell.xib */; };
 		E074C3281CE2CE6B002206DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E074C3271CE2CE6B002206DB /* Assets.xcassets */; };
 		E074C32D1CE2D891002206DB /* MNTopWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E074C32C1CE2D891002206DB /* MNTopWindowController.m */; };
 		E074C3321CE2DE23002206DB /* MNAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E074C3301CE2DE23002206DB /* MNAboutViewController.m */; };
@@ -220,6 +225,14 @@
 		E030CC031CE44E3B0029A42D /* MNGankCollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNGankCollectCell.xib; sourceTree = "<group>"; };
 		E030CC071CE45A710029A42D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E030CC081CE45A710029A42D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E0366C7B1D7D5D8600C35C27 /* JGWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JGWaterflowLayout.h; sourceTree = "<group>"; };
+		E0366C7C1D7D5D8600C35C27 /* JGWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JGWaterflowLayout.m; sourceTree = "<group>"; };
+		E0366C7E1D7D5DE300C35C27 /* MNPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNPicturesViewController.h; sourceTree = "<group>"; };
+		E0366C7F1D7D5DE300C35C27 /* MNPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNPicturesViewController.m; sourceTree = "<group>"; };
+		E0366C801D7D5DE300C35C27 /* MNPicturesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNPicturesViewController.xib; sourceTree = "<group>"; };
+		E0366C831D7DB5E600C35C27 /* MNPicturesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNPicturesCell.h; sourceTree = "<group>"; };
+		E0366C841D7DB5E600C35C27 /* MNPicturesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNPicturesCell.m; sourceTree = "<group>"; };
+		E0366C851D7DB5E600C35C27 /* MNPicturesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNPicturesCell.xib; sourceTree = "<group>"; };
 		E074C3271CE2CE6B002206DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E074C32B1CE2D891002206DB /* MNTopWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNTopWindowController.h; sourceTree = "<group>"; };
 		E074C32C1CE2D891002206DB /* MNTopWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNTopWindowController.m; sourceTree = "<group>"; };
@@ -698,8 +711,8 @@
 		E030CBF21CE41A0D0029A42D /* views */ = {
 			isa = PBXGroup;
 			children = (
-				E030CBF31CE41A1B0029A42D /* LrdOutputView.h */,
-				E030CBF41CE41A1B0029A42D /* LrdOutputView.m */,
+				E0366C7A1D7D5D7200C35C27 /* JGWaterflowLayout */,
+				E0366C791D7D5D3B00C35C27 /* LrdOutputView */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -742,6 +755,24 @@
 				E030CC081CE45A710029A42D /* Reachability.m */,
 			);
 			name = NetApple;
+			sourceTree = "<group>";
+		};
+		E0366C791D7D5D3B00C35C27 /* LrdOutputView */ = {
+			isa = PBXGroup;
+			children = (
+				E030CBF31CE41A1B0029A42D /* LrdOutputView.h */,
+				E030CBF41CE41A1B0029A42D /* LrdOutputView.m */,
+			);
+			name = LrdOutputView;
+			sourceTree = "<group>";
+		};
+		E0366C7A1D7D5D7200C35C27 /* JGWaterflowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E0366C7B1D7D5D8600C35C27 /* JGWaterflowLayout.h */,
+				E0366C7C1D7D5D8600C35C27 /* JGWaterflowLayout.m */,
+			);
+			name = JGWaterflowLayout;
 			sourceTree = "<group>";
 		};
 		E074C32E1CE2DE01002206DB /* 关于 */ = {
@@ -915,6 +946,9 @@
 				E0B631D61CE17F74003D9A02 /* MNGirlsCell.h */,
 				E0B631D71CE17F74003D9A02 /* MNGirlsCell.m */,
 				E0B631D81CE17F74003D9A02 /* MNGirlsCell.xib */,
+				E0366C831D7DB5E600C35C27 /* MNPicturesCell.h */,
+				E0366C841D7DB5E600C35C27 /* MNPicturesCell.m */,
+				E0366C851D7DB5E600C35C27 /* MNPicturesCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -925,6 +959,9 @@
 				E0B631C61CE0E0A3003D9A02 /* GirlsViewController.h */,
 				E0B631C71CE0E0A3003D9A02 /* GirlsViewController.m */,
 				E0B631C81CE0E0A3003D9A02 /* GirlsViewController.xib */,
+				E0366C7E1D7D5DE300C35C27 /* MNPicturesViewController.h */,
+				E0366C7F1D7D5DE300C35C27 /* MNPicturesViewController.m */,
+				E0366C801D7D5DE300C35C27 /* MNPicturesViewController.xib */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -1004,6 +1041,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B631C51CE0E090003D9A02 /* OthersViewController.xib in Resources */,
+				E0366C871D7DB5E600C35C27 /* MNPicturesCell.xib in Resources */,
 				E00F314F1CE1BA6400CC1BD4 /* PhotoItemView.xib in Resources */,
 				E00F332A1CE1D59200CC1BD4 /* MNGankBaseCell.xib in Resources */,
 				E074C3331CE2DE23002206DB /* MNAboutViewController.xib in Resources */,
@@ -1019,6 +1057,7 @@
 				E030CBFF1CE4282A0029A42D /* MNCollectViewController.xib in Resources */,
 				E0B631DA1CE17F74003D9A02 /* MNGirlsCell.xib in Resources */,
 				E00F33301CE1E54A00CC1BD4 /* MNWebViewController.xib in Resources */,
+				E0366C821D7D5DE300C35C27 /* MNPicturesViewController.xib in Resources */,
 				E00F33041CE1BBA700CC1BD4 /* CoreSDWebImage.bundle in Resources */,
 				E00F31511CE1BA6400CC1BD4 /* PhotoBroswerVC.xib in Resources */,
 			);
@@ -1080,6 +1119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E00F31441CE1BA6400CC1BD4 /* UIView+PBExtend.m in Sources */,
+				E0366C861D7DB5E600C35C27 /* MNPicturesCell.m in Sources */,
 				E00F32F91CE1BBA700CC1BD4 /* UIDevice+Extend.m in Sources */,
 				E0B631C91CE0E0A3003D9A02 /* GirlsViewController.m in Sources */,
 				E0B631C41CE0E090003D9A02 /* OthersViewController.m in Sources */,
@@ -1095,6 +1135,7 @@
 				E00F331B1CE1BBA700CC1BD4 /* SVProgressHUD.m in Sources */,
 				E074C32D1CE2D891002206DB /* MNTopWindowController.m in Sources */,
 				E030CBF81CE41FCA0029A42D /* MNUtils.m in Sources */,
+				E0366C811D7D5DE300C35C27 /* MNPicturesViewController.m in Sources */,
 				E030CBF51CE41A1B0029A42D /* LrdOutputView.m in Sources */,
 				E00F33001CE1BBA700CC1BD4 /* UITableViewCell+Extend.m in Sources */,
 				E00A65CC1CE49854004B6E4F /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -1120,6 +1161,7 @@
 				E00F32FC1CE1BBA700CC1BD4 /* UIImage+Cut.m in Sources */,
 				E0B6316A1CE0D1B5003D9A02 /* main.m in Sources */,
 				E00F314E1CE1BA6400CC1BD4 /* PhotoItemView.m in Sources */,
+				E0366C7D1D7D5D8600C35C27 /* JGWaterflowLayout.m in Sources */,
 				E00F33181CE1BBA700CC1BD4 /* CoreSVP.m in Sources */,
 				E0B631B91CE0DFF6003D9A02 /* UIBarButtonItem+MNExtension.m in Sources */,
 				E00A66251CE5E0C7004B6E4F /* UIScrollView+PullBig.m in Sources */,

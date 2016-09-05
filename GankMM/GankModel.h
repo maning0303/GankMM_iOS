@@ -6,7 +6,7 @@
 //  Copyright © 2016年 马宁. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface GankModel : NSObject
 
@@ -52,6 +52,11 @@
  *  额外的属性：这个是否收藏了
  */
 @property(nonatomic,assign,getter=isCollect)BOOL collect;
+
+/**
+ *  额外的属性：图片的高度
+ */
+@property (nonatomic, assign) CGFloat imageH;
 
 
 @end

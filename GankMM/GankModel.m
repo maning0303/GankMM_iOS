@@ -10,4 +10,12 @@
 
 @implementation GankModel
 
+/**
+ *  返回图片的高度
+ */
+-(CGFloat)imageH
+{
+    return 180;
+}
+
 @end

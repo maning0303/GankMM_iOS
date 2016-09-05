@@ -29,7 +29,7 @@
     _lableTime.text = [gankModel.publishedAt componentsSeparatedByString:@"T"][0];
     
     [_imageViewShow sd_setImageWithURL:[NSURL URLWithString:gankModel.url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        
+        MNLog(@"%@image:",image);
         //开启图形上下文
         UIGraphicsBeginImageContextWithOptions(_imageViewShow.size, YES, 0.0);
         //将下载的图片绘制到图形上下文中
@@ -40,6 +40,9 @@
         _imageViewShow.image = UIGraphicsGetImageFromCurrentImageContext();
         //结束图形上下文
         UIGraphicsEndImageContext();
+        
+        //赋值图片的高度
+        _gankModel.imageH = height;
         
     }];
     

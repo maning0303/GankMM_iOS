@@ -11,6 +11,7 @@
 #import "GankViewController.h"
 #import "OthersViewController.h"
 #import "GirlsViewController.h"
+#import "MNPicturesViewController.h"
 
 @interface BaseTabBarController ()
 
@@ -45,7 +46,8 @@
  */
 -(void)addChildView
 {
-    GirlsViewController *girlsVc = [[GirlsViewController alloc] init];
+//    GirlsViewController *girlsVc = [[GirlsViewController alloc] init];
+    MNPicturesViewController *girlsVc = [[MNPicturesViewController alloc] init];
     GankViewController *gankVc = [[GankViewController alloc] init];
     OthersViewController *othersVc = [[OthersViewController alloc] init];
     
