@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lableTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lableWho;
 @property (weak, nonatomic) IBOutlet UILabel *lableTime;
+@property (weak, nonatomic) IBOutlet UIView *bgView;
 
 @end
 
@@ -70,6 +71,15 @@
     }
    
     
+}
+
+-(void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated
+{
+    if(highlighted){
+        _bgView.backgroundColor = [UIColor colorWithWhite:0.96 alpha:1.000];
+    }else{
+        _bgView.backgroundColor = [UIColor colorWithWhite:0.99 alpha:1.000];
+    }
 }
 
 @end
