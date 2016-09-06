@@ -80,6 +80,12 @@
 		E02D19111D7E55DB0011B51A /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02D19101D7E55DB0011B51A /* UMMobClick.framework */; };
 		E02D19131D7E562E0011B51A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02D19121D7E562E0011B51A /* CoreTelephony.framework */; };
 		E02D19151D7E56440011B51A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E02D19141D7E56440011B51A /* libz.tbd */; };
+		E02D191C1D7E5D1C0011B51A /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D19161D7E5D1C0011B51A /* 001.png */; };
+		E02D191D1D7E5D1C0011B51A /* 002.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D19171D7E5D1C0011B51A /* 002.png */; };
+		E02D191E1D7E5D1C0011B51A /* 003.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D19181D7E5D1C0011B51A /* 003.png */; };
+		E02D191F1D7E5D1C0011B51A /* 004.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D19191D7E5D1C0011B51A /* 004.png */; };
+		E02D19201D7E5D1C0011B51A /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D191A1D7E5D1C0011B51A /* 005.png */; };
+		E02D19211D7E5D1C0011B51A /* 006.png in Resources */ = {isa = PBXBuildFile; fileRef = E02D191B1D7E5D1C0011B51A /* 006.png */; };
 		E030CBED1CE38A300029A42D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E030CBEC1CE38A300029A42D /* libsqlite3.tbd */; };
 		E030CBFE1CE4282A0029A42D /* MNCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E030CBFC1CE4282A0029A42D /* MNCollectViewController.m */; };
 		E030CBFF1CE4282A0029A42D /* MNCollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E030CBFD1CE4282A0029A42D /* MNCollectViewController.xib */; };
@@ -101,8 +107,6 @@
 		E0B631CA1CE0E0A3003D9A02 /* GirlsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B631C81CE0E0A3003D9A02 /* GirlsViewController.xib */; };
 		E0B631D91CE17F74003D9A02 /* MNGirlsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B631D71CE17F74003D9A02 /* MNGirlsCell.m */; };
 		E0B631DA1CE17F74003D9A02 /* MNGirlsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B631D81CE17F74003D9A02 /* MNGirlsCell.xib */; };
-		E0DDE35B1CEAB8B7008F1535 /* gank_screen001.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */; };
-		E0DDE35C1CEAB8B7008F1535 /* gank_screen_002.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -245,6 +249,12 @@
 		E02D19101D7E55DB0011B51A /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
 		E02D19121D7E562E0011B51A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		E02D19141D7E56440011B51A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E02D19161D7E5D1C0011B51A /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
+		E02D19171D7E5D1C0011B51A /* 002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 002.png; sourceTree = "<group>"; };
+		E02D19181D7E5D1C0011B51A /* 003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 003.png; sourceTree = "<group>"; };
+		E02D19191D7E5D1C0011B51A /* 004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 004.png; sourceTree = "<group>"; };
+		E02D191A1D7E5D1C0011B51A /* 005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 005.png; sourceTree = "<group>"; };
+		E02D191B1D7E5D1C0011B51A /* 006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 006.png; sourceTree = "<group>"; };
 		E030CBEC1CE38A300029A42D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E030CBFB1CE4282A0029A42D /* MNCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCollectViewController.h; sourceTree = "<group>"; };
 		E030CBFC1CE4282A0029A42D /* MNCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCollectViewController.m; sourceTree = "<group>"; };
@@ -277,8 +287,6 @@
 		E0B631D61CE17F74003D9A02 /* MNGirlsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNGirlsCell.h; sourceTree = "<group>"; };
 		E0B631D71CE17F74003D9A02 /* MNGirlsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNGirlsCell.m; sourceTree = "<group>"; };
 		E0B631D81CE17F74003D9A02 /* MNGirlsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MNGirlsCell.xib; sourceTree = "<group>"; };
-		E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gank_screen001.png; sourceTree = "<group>"; };
-		E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gank_screen_002.png; sourceTree = "<group>"; };
 		EC15BA267BCC210D7FFBFDDA /* libPods-GankMM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GankMM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -852,8 +860,12 @@
 		E074E9451CEAB07A00FB01FE /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				E0DDE3591CEAB8B7008F1535 /* gank_screen001.png */,
-				E0DDE35A1CEAB8B7008F1535 /* gank_screen_002.png */,
+				E02D19161D7E5D1C0011B51A /* 001.png */,
+				E02D19171D7E5D1C0011B51A /* 002.png */,
+				E02D19181D7E5D1C0011B51A /* 003.png */,
+				E02D19191D7E5D1C0011B51A /* 004.png */,
+				E02D191A1D7E5D1C0011B51A /* 005.png */,
+				E02D191B1D7E5D1C0011B51A /* 006.png */,
 			);
 			name = screenshots;
 			sourceTree = "<group>";
@@ -1047,14 +1059,18 @@
 				E0B631C51CE0E090003D9A02 /* OthersViewController.xib in Resources */,
 				E0366C871D7DB5E600C35C27 /* MNPicturesCell.xib in Resources */,
 				E00F314F1CE1BA6400CC1BD4 /* PhotoItemView.xib in Resources */,
+				E02D191C1D7E5D1C0011B51A /* 001.png in Resources */,
+				E02D19211D7E5D1C0011B51A /* 006.png in Resources */,
 				E00F332A1CE1D59200CC1BD4 /* MNGankBaseCell.xib in Resources */,
+				E02D191E1D7E5D1C0011B51A /* 003.png in Resources */,
+				E02D191F1D7E5D1C0011B51A /* 004.png in Resources */,
 				E074C3331CE2DE23002206DB /* MNAboutViewController.xib in Resources */,
 				E074C3281CE2CE6B002206DB /* Assets.xcassets in Resources */,
-				E0DDE35C1CEAB8B7008F1535 /* gank_screen_002.png in Resources */,
-				E0DDE35B1CEAB8B7008F1535 /* gank_screen001.png in Resources */,
 				E0B631C01CE0E059003D9A02 /* GankViewController.xib in Resources */,
 				E00F33171CE1BBA700CC1BD4 /* CoreSVP.bundle in Resources */,
 				E00F31481CE1BA6400CC1BD4 /* PB.bundle in Resources */,
+				E02D191D1D7E5D1C0011B51A /* 002.png in Resources */,
+				E02D19201D7E5D1C0011B51A /* 005.png in Resources */,
 				E030CC051CE44E3B0029A42D /* MNGankCollectCell.xib in Resources */,
 				E0B631CA1CE0E0A3003D9A02 /* GirlsViewController.xib in Resources */,
 				E00F331A1CE1BBA700CC1BD4 /* SVProgressHUD.bundle in Resources */,
