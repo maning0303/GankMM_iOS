@@ -51,9 +51,18 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     //状态栏设置
     [[MNTopWindowController shareInstance] setStatusBarStyle:UIStatusBarStyleDefault];
+    [MobClick beginLogPageView:@"GankViewController"];
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"GankViewController"];
+}
+
 
 -(void)setNavigation
 {
@@ -111,7 +120,6 @@
 
 -(void)titleClick:(UITapGestureRecognizer *)tap
 {
-    NSLog(@"------tag:%zd",tap.view.tag);
     NSInteger index = tap.view.tag;
     
     //设置偏移量
@@ -160,15 +168,11 @@
  */
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    
-    NSLog(@"scrollViewDidEndDecelerating");
     [self scrollViewDidEndScrollingAnimation:scrollView];
-    
 }
 
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
-    NSLog(@"scrollViewDidEndScrollingAnimation");
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     

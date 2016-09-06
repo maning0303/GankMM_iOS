@@ -20,6 +20,7 @@
 #import "MNTopWindow.h"
 #import "FileUtils.h"
 #import "MNUtils.h"
+#import "UMMobClick/MobClick.h"
 
 
 //自定义Log
@@ -57,6 +58,13 @@
 #define MNGitHubIOSGankMM @"https://github.com/maning0303/GankMM_iOS"
 //干货集中营
 #define MNGankio @"https://gank.io"
+
+//--------------判断Debug模式
+#ifdef DEBUG
+#define MNIsDebug YES
+#else
+#define MNIsDebug NO
+#endif
 
 
 #endif /* PrefixHeader_pch */

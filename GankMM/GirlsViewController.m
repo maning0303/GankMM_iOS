@@ -76,6 +76,13 @@ static NSString * MNGirlsCellID = @"girls";
     [super viewWillAppear:animated];
     //状态栏设置
     [[MNTopWindowController shareInstance] setStatusBarStyle:UIStatusBarStyleDefault];
+    [MobClick beginLogPageView:@"MNPicturesViewController"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"MNPicturesViewController"];
 }
 
 -(void)setNavigation

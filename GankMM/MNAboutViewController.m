@@ -30,6 +30,17 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [MobClick beginLogPageView:@"MNAboutViewController"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"MNAboutViewController"];
+}
 
 -(void)setNavigation
 {
@@ -50,8 +61,6 @@
 -(void)initData
 {
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    
-    MNLog(@"---infoDictionary---%@",infoDictionary);
     
     // app名称
     NSString *app_Name = [infoDictionary objectForKey:@"CFBundleName"];

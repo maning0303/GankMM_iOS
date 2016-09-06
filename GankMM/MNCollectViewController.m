@@ -46,10 +46,20 @@ static NSString * MNCollectCellID = @"MNCollectCellID";
     [self.navigationController setNavigationBarHidden:NO];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [MobClick beginLogPageView:@"MNCollectViewController"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"MNCollectViewController"];
+}
+
 -(void)viewDidAppear:(BOOL)animated
 {
-    NSLog(@"---MNCollectViewController---viewDidAppear---%@",animated?@"true":@"false");
-    
     //更新数据
     [self updateCollectState];
     
@@ -62,7 +72,6 @@ static NSString * MNCollectCellID = @"MNCollectCellID";
         //更新数据
 //        [self updateCollectState];
     }else{
-        MNLog(@"没有任何收藏");
         [MyProgressHUD showToast:@"收藏为空，快去添加收藏吧!"];
     }
     
@@ -125,7 +134,6 @@ static NSString * MNCollectCellID = @"MNCollectCellID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MNLog(@"---%zd---",indexPath.row);
     
     //跳转WebView
     MNWebViewController *webViewVc = [[MNWebViewController alloc] init];

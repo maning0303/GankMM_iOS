@@ -44,6 +44,18 @@
 
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [MobClick beginLogPageView:@"MNWebViewController"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"MNWebViewController"];
+}
+
 -(void)initMoreBtn
 {
     LrdCellModel *one = [[LrdCellModel alloc] initWithTitle:@"复制链接" imageName:@""];
@@ -165,7 +177,6 @@
 
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
-    MNLog(@"开始加载");
     [self updateState];
     _webViewProgressView.hidden = NO;
     [_webViewProgressView setProgress:0 animated:NO];
@@ -174,7 +185,6 @@
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    MNLog(@"结束加载");
     [self updateState];
     _webViewProgressView.hidden = YES;
     
@@ -182,14 +192,12 @@
 
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    MNLog(@"加载出错：%@",error);
     [self updateState];
     _webViewProgressView.hidden = YES;
 }
 
 -(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress
 {
-    NSLog(@"---webViewProgress--%zd----",progress);
     if (progress == NJKInteractiveProgressValue) {
         [_webViewProgressView setProgress:100 animated:YES];
         _webViewProgressView.hidden = YES;
@@ -229,7 +237,6 @@
                 return;
             }
             if(_gankModel.collect){
-                MNLog(@"取消收藏");
                 //删除数据库数据
                 BOOL result = [MNGankDao deleteOne:_gankModel._id];
                 if(result){
@@ -239,7 +246,6 @@
                     [MyProgressHUD showToast:@"取消收藏失败"];
                 }
             }else{
-                MNLog(@"收藏");
                 //插入数据库
                 BOOL result = [MNGankDao save:_gankModel];
                 if(result){

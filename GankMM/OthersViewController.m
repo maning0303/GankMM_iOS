@@ -43,18 +43,26 @@ const CGFloat TopViewH = 300;
     
 }
 
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
 
 -(void)viewDidAppear:(BOOL)animated
 {
     NSLog(@"---OthersViewController---viewDidAppear---%@",animated?@"true":@"false");
     //状态栏设置
     [[MNTopWindowController shareInstance] setStatusBarStyle:UIStatusBarStyleLightContent];
-    
     [self.tableView reloadData];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [MobClick beginLogPageView:@"OthersViewController"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"OthersViewController"];
 }
 
 -(void)setNavigation
@@ -205,7 +213,6 @@ const CGFloat TopViewH = 300;
     }else{
         clearCacheSizeStr = [NSString stringWithFormat:@"%.1fK",cacheSize * 1024];
     }
-    MNLog(@"图片缓存大小:%@",clearCacheSizeStr);
     return clearCacheSizeStr;
 }
 
@@ -251,12 +258,10 @@ const CGFloat TopViewH = 300;
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"缓存清除" message:@"确定要清除图片缓存吗？" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        MNLog(@"确认");
         [self cleanCacheApp];
     }];
     
     UIAlertAction *action2= [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        MNLog(@"取消");
     }];
     
     [alert addAction:action1];
@@ -282,7 +287,6 @@ const CGFloat TopViewH = 300;
 
 -(void)pushToCollectPage
 {
-    MNLogFunc;
     MNCollectViewController *collectVc = [[MNCollectViewController alloc] init];
     [self.navigationController pushViewController:collectVc animated:YES];
 }

@@ -142,7 +142,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
     flag = 0;
     
     [GankNetApi getGankDataWithType:_gankDataType pageSize:pageSize pageIndex:_pageIndex success:^(NSDictionary *dict) {
-        MNLog(@"---loadNewDatas-success---%@",dict);
         if(flag == 1){
             return;
         }
@@ -152,7 +151,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
         //字典转模型
         self.gankDatas = [GankModel mj_objectArrayWithKeyValuesArray:dict[@"results"]];
         [self updateCollectState];
-        MNLog(@"---loadNewDatas-gankDatas---%@",self.gankDatas);
         
         if(self.gankDatas.count > 0){
             [self.tableView.mj_footer setHidden:NO];
@@ -167,7 +165,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
         [MNUtils showNetWorkActivityIndicator:NO];
         
     } failure:^(NSString *text) {
-        MNLog(@"----loadNewDatas-失败----%@",text);
         //结束刷新
         [self.tableView.mj_header endRefreshing];
         //网络状态
@@ -191,7 +188,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
     
     flag = 1;
     [GankNetApi getGankDataWithType:_gankDataType pageSize:pageSize pageIndex:_pageIndex success:^(NSDictionary *dict) {
-        MNLog(@"---loadMoreDatas-success---%@",dict);
         if(flag == 0){
             return;
         }
@@ -201,7 +197,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
         //字典转模型
         NSMutableArray *newDatas = [GankModel mj_objectArrayWithKeyValuesArray:dict[@"results"]];
         
-        MNLog(@"---loadMoreDatas-newDatas---%@",newDatas);
         
         //判断新的数据和旧的数据有没有一样的
         GankModel *gankModel;
@@ -211,7 +206,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
             for (int j= 0; j<newDatas.count; j++) {
                 gankModelNew = newDatas[j];
                 if([gankModelNew._id isEqualToString:gankModel._id]){
-                    NSLog(@"移除：%@",gankModelNew.desc);
                     //移除出集合
                     [newDatas removeObjectAtIndex:j];
                 }
@@ -232,7 +226,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
         [MNUtils showNetWorkActivityIndicator:NO];
         
     } failure:^(NSString *text) {
-        MNLog(@"----loadNewDatas-失败----%@",text);
         //结束刷新
         [self.tableView.mj_footer endRefreshing];
         //网络状态
@@ -277,8 +270,6 @@ static NSString * MNGankBaseCellID = @"GankBaseCellID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MNLog(@"---%zd---",indexPath.row);
-    
     //跳转WebView
     MNWebViewController *webViewVc = [[MNWebViewController alloc] init];
     GankModel *gankModel = self.gankDatas[indexPath.row];

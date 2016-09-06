@@ -66,6 +66,13 @@ static NSString * MNGirlsCellID = @"girls";
     [super viewWillAppear:animated];
     //状态栏设置
     [[MNTopWindowController shareInstance] setStatusBarStyle:UIStatusBarStyleDefault];
+    [MobClick beginLogPageView:@"MNPicturesViewController"];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:@"MNPicturesViewController"];
 }
 
 -(void)setNavigation
@@ -283,8 +290,6 @@ static NSString * MNGirlsCellID = @"girls";
 #pragma mark -- <--UICollectionViewDelegate-->
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    MNLog(@"---%zd---",indexPath.row);
-    
     [self networkImageShow:indexPath.row];
 }
 

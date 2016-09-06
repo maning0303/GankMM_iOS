@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
+#import "UMMobClick/MobClick.h"
 
 
 @interface AppDelegate ()
@@ -32,6 +33,9 @@
     //创建顶部Window(默认隐藏)
     [MNTopWindow show];
     
+    //初始化Umeng相关
+    [self initUmeng];
+    
     [NSThread sleepForTimeInterval:2.0];//设置启动页面时间
     
     NSLog(@"结束执行：didFinishLaunchingWithOptions");
@@ -52,6 +56,19 @@
     
     //显示窗口
     [self.window makeKeyAndVisible];
+}
+
+-(void)initUmeng
+{
+    UMConfigInstance.appKey = @"57ce1d4767e58e661f00124b";
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick setAppVersion:version];
+    //Debug模式下显示Umeng日志
+    [MobClick setLogEnabled:MNIsDebug];
+    //Debug模式下关闭友盟的错误统计
+//    [MobClick setCrashReportEnabled:!MNIsDebug];
+    [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
+    
 }
 
 
