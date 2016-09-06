@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
-#import "UMMobClick/MobClick.h"
 
 
 @interface AppDelegate ()
@@ -68,6 +67,20 @@
     //Debug模式下关闭友盟的错误统计
 //    [MobClick setCrashReportEnabled:!MNIsDebug];
     [MobClick startWithConfigure:UMConfigInstance];//配置以上参数后调用此方法初始化SDK！
+    
+    //集成测试--获取设备的oid
+    Class cls = NSClassFromString(@"UMANUtil");
+    SEL deviceIDSelector = @selector(openUDIDString);
+    NSString *deviceID = nil;
+    if(cls && [cls respondsToSelector:deviceIDSelector]){
+        deviceID = [cls performSelector:deviceIDSelector];
+    }
+    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:@{@"oid" : deviceID}
+                                                       options:NSJSONWritingPrettyPrinted
+                                                         error:nil];
+    
+    NSLog(@"%@", [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding]);
+    
     
 }
 

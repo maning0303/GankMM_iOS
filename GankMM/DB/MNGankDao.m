@@ -145,7 +145,6 @@ static sqlite3 *_db = nil;
     NSString *sql = [NSString stringWithFormat:@"select _id from t_gank_collect where _id like '%@'",_id];
     sqlite3_stmt *stmt = NULL;
     if(sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL) == SQLITE_OK){
-        NSLog(@"查询语句没有问题");
         // 每调一次sqlite3_step函数，stmt就会指向下一条记录
         if (sqlite3_step(stmt) == SQLITE_ROW) { // 找到一条记录
             // 取出第0列字段的值
@@ -173,7 +172,6 @@ static sqlite3 *_db = nil;
     NSString *sql = [NSString stringWithFormat:@"select _id,source,who,publishedAt,type,desc,url from t_gank_collect where type like '%@'",type];
     sqlite3_stmt *stmt = NULL;
     if(sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL) == SQLITE_OK){
-        NSLog(@"查询语句没有问题");
         
         results = [MNGankDao readDbToAraay:stmt];
         
@@ -197,7 +195,6 @@ static sqlite3 *_db = nil;
     NSString *sql = [NSString stringWithFormat:@"select _id,source,who,publishedAt,type,desc,url from t_gank_collect"];
     sqlite3_stmt *stmt = NULL;
     if(sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL) == SQLITE_OK){
-        NSLog(@"查询语句没有问题");
         
         results = [MNGankDao readDbToAraay:stmt];
         
@@ -361,7 +358,6 @@ static sqlite3 *_db = nil;
     NSString *sql = [NSString stringWithFormat:@"select _id,source,who,publishedAt,type,desc,url from t_gank_cache where type like '%@'",type];
     sqlite3_stmt *stmt = NULL;
     if(sqlite3_prepare_v2(_db, sql.UTF8String, -1, &stmt, NULL) == SQLITE_OK){
-        NSLog(@"查询语句没有问题");
         
         results = [MNGankDao readDbToAraay:stmt];
         
