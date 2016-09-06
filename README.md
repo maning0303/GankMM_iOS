@@ -7,8 +7,12 @@
 ####[干货集中营](http://gank.io/)  
 
 ##项目截图：
-![](https://github.com/maning0303/GankMM_iOS/raw/master/gank_screen001.png) 
-![](https://github.com/maning0303/GankMM_iOS/raw/master/gank_screen_002.png) 
+![](https://github.com/maning0303/GankMM_iOS/raw/master/001.png) 
+![](https://github.com/maning0303/GankMM_iOS/raw/master/002.png) 
+![](https://github.com/maning0303/GankMM_iOS/raw/master/003.png) 
+![](https://github.com/maning0303/GankMM_iOS/raw/master/004.png) 
+![](https://github.com/maning0303/GankMM_iOS/raw/master/005.png) 
+![](https://github.com/maning0303/GankMM_iOS/raw/master/006.png) 
 
 ##感谢：
 ######[代码家-干货集中营](https://github.com/daimajia)
