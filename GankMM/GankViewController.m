@@ -72,21 +72,23 @@
 -(void)setTitleViews
 {
     //基本变量
-    CGFloat lableW = MNScreenW / self.childViewControllers.count;
+    CGFloat count = self.childViewControllers.count;
+    CGFloat lableW = MNScreenW / count;
     CGFloat lableY = 0;
-    CGFloat lableH = self.titleScrollView.frame.size.height;
+    CGFloat lableX = 0;
+    CGFloat lableH = 44;
     
     //添加
-    for (NSInteger i = 0; i< self.childViewControllers.count; i++) {
+    for (NSInteger i = 0; i< count; i++) {
         UILabel *lable = [[UILabel alloc] init];
         lable.font = [UIFont systemFontOfSize:14];
         [lable setTextColor:GankTabBarGrayColor];
         [lable setHighlightedTextColor:GankMainColor];
         lable.text = [self.childViewControllers[i] title];
-        CGFloat lableX = lableW * i;
+        lableX = lableW * i;
         lable.frame = CGRectMake(lableX, lableY, lableW, lableH);
         lable.textAlignment = NSTextAlignmentCenter;
-        lable.backgroundColor = [UIColor whiteColor];
+        lable.backgroundColor = [UIColor clearColor];
         //手势
         [lable addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(titleClick:)]];
         lable.userInteractionEnabled = YES;
