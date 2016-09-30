@@ -18,6 +18,7 @@
 @implementation MNGirlsCell
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     //去掉默认效果
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
